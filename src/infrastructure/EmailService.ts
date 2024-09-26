@@ -17,7 +17,7 @@ export class EmailService {
 
     public async sendNotification(notification: Notification) {
         const mailOptions = {
-            from: `${process.env.MAIL_USERNAME}`,
+            from: `${process.env.MAIL_USERNAME || 'no-reply@healthmed.com'}`,
             to: notification.doctorEmail,
             subject: 'Health&Med - Nova consulta agendada',
             text: `Olá, Dr. ${notification.doctorName}!\nVocê tem uma nova consulta marcada!\n\nPaciente: ${notification.patientName}.\nData e horário: ${notification.scheduleDate}.`,
