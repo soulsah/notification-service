@@ -52,7 +52,6 @@ coverage/
 # Docker
 docker-compose.override.yml
 .docker/
-Dockerfile
 
 # AWS Credentials
 .aws/
