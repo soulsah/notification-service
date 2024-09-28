@@ -34,6 +34,8 @@ Bibliotecas:
 - OpenAPI
 - Lombok
 
+
+
 Banco de dados:
 
 - AWS DynamoDB
@@ -53,26 +55,30 @@ Essa abordagem nos proporciona uma estrutura modular, escalável, testável e de
 
 Para rodar a aplicação no AWS ECS, foi criado o arquivo Dockerflie que gerencia o processo de build da aplicação através do Maven e JDK 17:
 
-![image](https://github.com/user-attachments/assets/38ee4d73-5cc6-47cd-88ce-3c923611ba22)
+![image](https://github.com/user-attachments/assets/61f37259-d74f-468b-82e9-975f82783ab2)
 
 ## Cobertura de Testes Unitários da aplicação service-usuario
 
 Comprovando acima de 80% de cobertura de testes unitário:
 
-![image](https://github.com/user-attachments/assets/8e5b3d82-f90e-4eb6-9205-f0fc6ab69bec)
+![image](https://github.com/user-attachments/assets/28d13ac4-2ca8-4b08-9710-249002323c7e)
 
 ## Documentação das API's
 
 Adicionamos a geração automática da documentação através da biblioteca SpringDoc Openapi, pode ser acessada em tempo de execução da aplicação nas respectivas url's:
 
-Microservice Usuario:  http://localhost:8080/swagger-ui/index.html
+Microservice Usuario:  http://localhost:8081/swagger-ui/index.html
 
-![image](https://github.com/user-attachments/assets/8df7d9ec-762b-4ea9-9189-37e0f5dd86f4)
+![image](https://github.com/user-attachments/assets/a2aafd27-ab13-460b-a6ab-d42a783dc472)
+
+## Arquitetura
+
+![image](https://github.com/user-attachments/assets/5f674c1b-cfea-411e-baeb-838f98b11732)
 
 ## Arquivo Postman
 
 Disponibilizamos um de arquivo JSON com todas as requisições Postman para testar a API, os arquivos estão disponíveis nos seguintes links:
-https://github.com/soulsah/service-agendamento/Hackaton.postman_collection.json
+https://github.com/soulsah/service-usuario/blob/main/Hackathon%20Fiap%202024-DynamoDB.postman_collection.json
 
 # Conclusão
 
